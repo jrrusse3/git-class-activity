@@ -10,6 +10,7 @@ class VendorsController < ApplicationController
   # GET /vendors/1
   # GET /vendors/1.json
   def show
+    @orders = Order.all
   end
 
   # GET /vendors/new

@@ -17,8 +17,8 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-        <td><%= order.product %></td>
-        <td><%= order.vendor %></td>
+        <td><%= order.product.name %></td>
+        <td><%= order.vendor.name %></td>
         <td><%= order.quantity %></td>
         <td><%= order.base_price %></td>
         <td><%= order.unit_price %></td>
